@@ -3,6 +3,7 @@
     "description": "A better SDK for Mercadolibre API",
     "homepage": "https://www.tecnogo.com",
     "keywords": ["sdk", "mercadolibre", "api"],
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Valentin Starck",
@@ -14,11 +15,6 @@
             "Tecnogo\\MeliSdk\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Tecnogo\\MeliSdk\\Test\\": "tests/MeliSdk/Test/"
-        }
-    },
     "require": {
         "php": ">=7.2.0",
         "ext-curl": "*",
@@ -28,9 +24,13 @@
         "illuminate/container": "^5.8"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.0",
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tecnogo\\MeliSdk\\Test\\": "tests/MeliSdk/Test/"
+        }
     },
     "license": "MIT",
-    "minimum-stability": "dev",
     "prefer-stable": true
 }
